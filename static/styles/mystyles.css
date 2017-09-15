@@ -7,7 +7,7 @@ body{
     background-color: hsl(174,100%,40%);
 }
 main{
-    max-width: 1000px;
+    max-width: 600px;
     margin: 0px auto;
     padding-top: 100px;
     clear: both;
@@ -46,7 +46,61 @@ a{
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
     transition: all 200ms;
 }
-a:hover{
-    color: #6073FF;
+
+/* Social Media Account Buttons */
+#social_container{
+    display: inline-block;
+}
+#social_container a{
+    padding: 10px 5px 10px 5px;
+    display: block;
+    height: 45px;
+    float: left;
+    border-radius: 0px;
     text-shadow: none;
+}
+#social_container a i{
+    font-size: 45px;
+}
+#social_container a img{
+    width: 45px;
+    filter: brightness(700%);
+    box-shadow: none;
+    transition: all 200ms;
+}
+#social_container a img:hover{
+    filter: brightness(100%);
+}
+.twitch_link i{
+    font-size: 42px !important;
+    margin-top: 3px;
+}
+
+.github_link:hover{
+    color: #582879;
+}
+.linkedin_link:hover{
+    color: #0084BF;
+}
+.twitter_link:hover{
+    color: #1DA1F2;
+}
+.facebook_link:hover{
+    color: #4267B2;
+}
+.youtube_link:hover{
+    color: #FF0000;
+}
+.twitch_link:hover{
+    color: #4B367C;
+    font-size: 40px !important;
+}
+.tradera_link:hover{
+    color: #582879;
+}
+.email_link:hover{
+    color: #205BAA;
+}
+.phone_link:hover{
+    color: #5AEB60;
 }
