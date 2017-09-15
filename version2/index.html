@@ -1,0 +1,229 @@
+<html>
+    <head>
+        <title>Joakim Johansson - Portfolio</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <style>
+            body{
+                background-color: #E9EBEE;
+                margin: 0px;
+            }
+
+            /* Header Styling */
+            #header{
+                height: 300px;
+                background-color: orange;
+            }
+            #header_inner{
+                max-width: 1000px;
+                height: 300px;
+                margin: auto;
+                position: relative;
+            }
+            #image_of_me{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                position: absolute;
+                left: 20px;
+                bottom: -90px;
+            }
+
+            /* Content Container Styling */
+            #content_container{
+                margin: auto;
+                max-width: 1000px;
+            }
+
+            /* Sidebar Styling */
+            #sidebar{
+                width: 240px;
+                float:left;
+                min-height: 800px;
+                background-color: #E9EBEE;
+                padding-right: 20px;
+                padding-top: 50px;
+                text-align: center;
+            }
+            #my_name{
+                font-size: 20px;
+                font-family: sans-serif;
+            }
+            #social_container{
+                margin-left: 28px;
+                margin-top: 40px;
+            }
+            #social_container a{
+                display: block;
+                color: #555;
+                text-align: left;
+                width: 220px;
+                height: 35px;
+            }
+            #social_container a i, #social_container a img{
+                font-size: 30px;
+                margin-right: 10px;
+                display: inline-block;
+                line-height: 30px;
+                float: left;
+            }
+            #social_container a span{
+                line-height: 30px;
+                display: inline-block;
+                float: left;
+                font-size: 15px;
+            }
+
+            .github_link:hover i{
+                color: #56297C;
+            }
+            .github_link:hover span.social_count{
+                background-color: #56297C !IMPORTANT;
+            }
+
+            /* Main Area Styling */
+            #main{
+                background-color: white;
+                width: 100%;
+                min-height: 800px;
+            }
+
+            /* Navigation Bar Styling */
+            #nav{
+                height: 60px;
+                background-color: white;
+                margin-bottom: 10px;
+            }
+            #nav_inner{
+                width: 1000px;
+                padding-left: 240px;
+                box-sizing: border-box;
+                margin: auto;
+                height: 50px;
+            }
+            .big_counter{
+                display: inline-block;
+                height: 60px;
+                box-sizing: border-box;
+                padding: 10px;
+                width: 100px;
+                text-decoration: none;
+                transition: all 200ms linear;
+            }
+            .big_counter:hover{
+                background-color: rgba(0,0,0,0.05);
+            }
+            .counter_name{
+                width: 100%;
+                display: inline-block;
+                padding: 3px 5px 0px 5px;
+                font-size: 10px;
+                text-align: center;
+                color: #555;
+            }
+            .counter_number{
+                width: 100%;
+                display: inline-block;
+                padding: 0px 5px 0px 5px;
+                font-size: 18px;
+                text-align: center;
+                color: #555;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header id="header">
+                <div id="header_inner">
+                    <img id="image_of_me" src="static/images/joakim_johansson_small_2.jpeg" />
+                </div>
+            </header>
+            <nav id="nav">
+                <div id="nav_inner">
+                    <a target="_blank" href="https://github.com/webjocke" class="big_counter">
+                        <span class="counter_name">Github Repos</span>
+                        <span class="counter_number" id="github_repos_count">4</span>
+                    </a>
+                    <a target="_blank" href="https://github.com/webjocke" class="big_counter">
+                        <span class="counter_name">Github Repos</span>
+                        <span class="counter_number" id="github_repos_count">4</span>
+                    </a>
+                </div>
+            </nav>
+            <div id="content_container">
+                <aside id="sidebar">
+                    <span id="my_name">JOAKIM JOHANSSON</span>
+                    <p>20 år, Linköping</p>
+                    <p>Nice story about me that is probaly two rows</p>
+
+                    <div id="social_container">
+                        <a target="_blank" class="github_link" href="https://github.com/webjocke">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <span>/webjocke</span>
+                        </a><!-- Github -->
+                        <a target="_blank" class="facebook_link" href="https://www.facebook.com/webjockejohansson">
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            <span>Joakim Johansson</span>
+                        </a><!-- Facebook -->
+                        <a target="_blank" class="twitter_link" href="https://twitter.com/webjocke">
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            <span>@webjocke</span>
+                        </a><!-- Twitter -->
+                        <a target="_blank" class="likedin_link" href="https://www.linkedin.com/in/joakim-johansson-49754075/">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            <span>Joakim Johansson</span>
+                        </a><!-- Linked IN -->
+                        <a target="_blank" class="youtube_link" href="https://www.youtube.com/">
+                            <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                            <span>Webjocke [Fix]</span>
+                        </a><!-- Youtube -->
+                        <a target="_blank" class="twitch_link" href="https://www.twitch.tv/webjocke">
+                            <i class="fa fa-twitch" aria-hidden="true"></i>
+                            <span>/webjocke</span>
+                        </a><!-- Twitch -->
+                        <a target="_blank" class="tradera_link" href="http://www.tradera.com/profile/feedback/3985614/webjocke">
+                            <img width="30" style="padding: 2px;" src="static/images/tradera_logo.png"/>
+                            <span>Webjocke</span>
+                        </a><!-- Tradera -->
+                        <a class="email_link" href="mailto:jocke@jocke.io">
+                            <i style="padding: 0px 2px;" class="fa fa-at" aria-hidden="true"></i>
+                            <span>jocke@jocke.io</span>
+                        </a><!-- Email -->
+                        <a class="phone_link" href="tel:+46761788426">
+                            <i style="padding: 0px 2px;" class="fa fa-phone-square" aria-hidden="true"></i>
+                            <span>+4676188426</span>
+                        </a><!-- Mobile -->
+                    </div>
+                </aside>
+                <div id="main">
+                    text
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/3d4d9e751c.js"></script>
+        <script>
+
+            // DOM Ready
+            $(function () {
+
+                // Enbles Bootstrap tooltip
+                $('[data-toggle="tooltip"]').tooltip();
+
+
+                // Github Repos Count
+                var github_repositories_link = "https://api.github.com/users/webjocke/repos";
+                $.getJSON( github_repositories_link, function( data ) {
+                    var github_repositories = data.length;
+                    $('#<span>Github Repos</span>').text(github_repositories);
+                });
+
+            })
+            
+        </script>
+    </body>
+</html>

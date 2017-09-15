@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300|Roboto:100,300');
+
+body {
+	margin: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+	background-color: white;
+}
+
+
+/* Container
+-----------------------------------------------------------------------------*/
+div#container {
+	width: 100%;
+	max-width: 1500px;
+    position: relative;
+	margin: auto;
+}
+div#container:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#main_content {
+	width: 100%;
+	float: left;
+	overflow: auto;
+	height: 100vh;
+	/*background-color: #f4f4f4;*/
+	background: linear-gradient(#eaeaea, #fff);
+}
+.content {
+	padding: 16px 120px 0px 270px;
+}
+#main_content::-webkit-scrollbar { 
+    display: none; 
+}
+h3.content_title_seperator{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	margin: 15px 0px;
+	color: #555;
+}
+div.content_item{
+	background-color: white;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	border: 1px solid #eaeaea;
+}
+img.content_item_image{
+	max-width: 100%;
+	max-height: 300px;
+	margin: auto;
+	margin-bottom: 15px;
+}
+h1.content_item_title{
+	margin: 0px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 100;
+}
+span.content_item_undertitletext{
+	font-style: italic;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+div.content_item_main_area{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+/*Box layout*/
+div.content_boxes_container{
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	display: flex;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: left;
+	align-items: stretch;
+	align-content: center;
+	margin: -10px;
+}
+div.content_box_item{
+	background-color: white;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	flex: 1;
+	margin: 10px;
+	min-width: 250px;
+	max-width: 500px;
+	border: 1px solid #eaeaea;
+}
+img.content_box_item_image{
+	max-width: 100%;
+	max-height: 300px;
+	margin: auto;
+	margin-bottom: 15px;
+}
+h1.content_box_item_title{
+	margin: 0px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 100;
+	font-size: 20px;
+}
+div.content_box_item_main_area{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+#main_sidebar {
+	float: left;
+	width: 250px;
+	margin-left: -100%;
+	position: relative;
+	background: white;
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#main_sidebar::-webkit-scrollbar { 
+    display: none; 
+}
+img#main_pic_of_me{
+    width: 60%;
+    margin-top: 50px;
+    border-radius: 50%;
+	margin-bottom: 20px;
+	margin-right: 50px;
+	display: inline-block;
+	float: right;
+}
+h2#main_name{
+    text-align: right;
+    margin-bottom: 0px;
+    font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	padding-right: 50px;
+	width: 100%;
+	box-sizing: border-box;
+}
+span#slogan{
+    text-align: right;
+    padding: 5px 0px 10px 0px;
+    display: inline-block;
+    font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	padding-right: 50px;
+	padding-left: 50px;
+	box-sizing: border-box;
+	width: 100%;
+}
+#socialmedia{
+	font-size: 25px;
+	color: black;
+	text-align: right;
+	margin-top: 10px;
+	padding-right: 50px;
+	width: 100%;
+	box-sizing: border-box;
+}
+#socialmedia a{
+	color: white;
+	text-align: center;
+}
+nav#main_menu{
+	margin: 40px 0px;
+	border-right: 2px solid #0076BD;
+}
+nav#main_menu a{
+	width: 75%;
+	margin-left: 25%;
+	display: inline-block;
+	padding: 8px 0px;
+	padding-right: 50px;
+	text-decoration: none;
+	text-align: right;
+	color: black;
+	box-sizing: border-box;
+	transition: padding 200ms linear, border 200ms linear;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+
+	transition: all 300ms ease;
+	background: linear-gradient(to right, white 50%, #0076BD 50%);
+	background-size: 200% 100%;
+	background-position: left bottom;
+}
+nav#main_menu a:hover{
+	padding-right: 60px;
+	background-position: right bottom;
+	color: white;
+	cursor: pointer;
+	/*
+	color: white;
+	background-color: #555;
+	-webkit-box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.16);
+	box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.16);
+	*/
+}
+
+nav#online_projects{
+	margin: 40px 0px 40px 0px;
+}
+h3#mini_project{
+	margin: 0px;
+}
+nav#online_projects a{
+	width: 100%;
+	display: inline-block;
+	font-size: 12px;
+	padding: 3px 0px;
+	padding-right: 50px;
+	text-decoration: none;
+	text-align: right;
+	color: black;
+	box-sizing: border-box;
+	transition: padding 200ms linear, border 200ms linear;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+nav#online_projects a:hover{
+	padding-right: 60px;
+	border-right: 5px solid #0076BD;
+}
+.fade_away_top{
+	width: 250px;
+	height: 40px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+.fade_away_bottom{
+	width: 250px;
+	height: 40px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+
+
+/* Right Sidebar
+-----------------------------------------------------------------------------*/
+#scroll_info_sidebar {
+	float: left;
+	width: 100px;
+	margin-left: -100px;
+	position: relative;
+	background-color: white;
+	height: 100vh;
+	padding: 20px;
+	font-size: 10px;
+	box-sizing: border-box;
+}
+
+
+
+
+
+/* Tablet */
+@media screen and (max-width: 1000px) {
+    .content {
+		padding: 16px 20px 0px 270px;
+	}
+	#scroll_info_sidebar {
+		display: none;
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 750px) {
+    .content {
+		padding: 16px 20px 0px 20px;
+	}
+	#main_sidebar {
+		display: none;
+	}
+}
