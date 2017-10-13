@@ -16,6 +16,14 @@ main{
 *{
     box-sizing: border-box;
 }
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 40px;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
 
 /* Main Area styling */
 img{
@@ -103,4 +111,13 @@ a{
 }
 .phone_link:hover{
     color: #5AEB60;
+}
+
+
+#online_tools {
+    display: inline-block;
+}
+#online_tools a {
+    font-size: 14px;
+    margin: 0px 7px;
 }
