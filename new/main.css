@@ -1,0 +1,110 @@
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Average|Lato:100,300,400');
+
+/* Global Styles */
+body, html {
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    margin: 0;
+}
+
+/* Wrapper Styles */
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "text_box image_box";
+}
+
+
+/* Text side styles */
+#info_box {
+    grid-area: text_box;
+    padding-right: 40px;
+    color: white;
+    font-family: sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-end;
+    border-right: 2px solid rgba(255, 255, 255, .6);
+    box-shadow: 3px 0px 30px 9px rgba(0,0,0,0.1);
+}
+
+#name {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 0px;
+}
+#sub_title {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 22px;
+    text-align: right;
+}
+#main_text {
+    margin: 0px;
+    font-family: 'Average', serif;
+    display: inline-block;
+    max-width: 300px;
+    text-align: right;
+}
+
+#social_container{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 40px;
+}
+#social_container a{
+    padding: 10px 5px 10px 5px;
+    display: block;
+    height: 45px;
+    float: left;
+    border-radius: 0px;
+    text-shadow: none;
+    color: white;
+    margin-left: 5px;
+}
+#social_container a i{
+    font-size: 45px;
+}
+.twitter_link:hover{
+    color: #1DA1F2 !important;
+}
+.github_link:hover{
+    color: #582879 !important;
+}
+.youtube_link:hover{
+    color: #FF0000 !important;
+}
+.twitch_link:hover{
+    color: #4B367C !important;
+}
+.email_link:hover{
+    color: #205BAA !important;
+}
+
+
+/* Picture side styles */
+#picture_box {
+    grid-area: image_box;
+    background-repeat: no-repeat;
+}
+#me_image {
+    height: 60vh;
+    float: left;
+    margin-top: 20vh;
+}
