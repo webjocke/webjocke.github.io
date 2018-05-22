@@ -16,7 +16,7 @@ body, html {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
     grid-template-rows: 1fr;
     grid-template-areas: 
     "text_box image_box";
