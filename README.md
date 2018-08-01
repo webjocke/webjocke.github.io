@@ -1,2 +1,2 @@
 # This is my personal website that can be seen on joakimjohansson.se
-where I'am posting my latest projects or not. Yey Nr2
+A basic info page about med and links to my socialmedia.
